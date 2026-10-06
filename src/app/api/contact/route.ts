@@ -64,11 +64,36 @@ export async function POST(req: Request) {
   }
 }
 
-// Admin endpoint: list messages (protect with auth in production)
-export async function GET() {
-  const messages = await prisma.contactMessage.findMany({
-    orderBy: { createdAt: "desc" },
-    take: 50,
-  });
-  return NextResponse.json({ messages });
+// Protected Admin endpoint: list messages
+export async function GET(req: Request) {
+  const authHeader = req.headers.get("authorization");
+  const apiKeyHeader = req.headers.get("x-admin-key");
+  const adminSecret = process.env.ADMIN_API_KEY;
+
+  const token = authHeader?.startsWith("Bearer ")
+    ? authHeader.slice(7)
+    : apiKeyHeader;
+
+  // Protect endpoint in production if ADMIN_API_KEY is configured
+  if (adminSecret && token !== adminSecret) {
+    return NextResponse.json(
+      { error: "Unauthorized access: Invalid or missing admin credentials" },
+      { status: 401 }
+    );
+  }
+
+  try {
+    const messages = await prisma.contactMessage.findMany({
+      orderBy: { createdAt: "desc" },
+      take: 50,
+    });
+    return NextResponse.json({ count: messages.length, messages });
+  } catch (err) {
+    console.error("[contact-get]", err);
+    return NextResponse.json(
+      { error: "Internal server error" },
+      { status: 500 }
+    );
+  }
 }
+
