@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#081026"/>
+      <stop offset="100%" stop-color="#0d233a"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg2)"/>
+  
+  <!-- Radar circles -->
+  <circle cx="400" cy="225" r="160" fill="none" stroke="#0ea5e9" stroke-opacity="0.15" stroke-width="1.5"/>
+  <circle cx="400" cy="225" r="110" fill="none" stroke="#0ea5e9" stroke-opacity="0.25" stroke-width="1.5"/>
+  <circle cx="400" cy="225" r="60" fill="none" stroke="#0ea5e9" stroke-opacity="0.35" stroke-width="1.5"/>
+  <line x1="220" y1="225" x2="580" y2="225" stroke="#0ea5e9" stroke-opacity="0.2"/>
+  <line x1="400" y1="55" x2="400" y2="395" stroke="#0ea5e9" stroke-opacity="0.2"/>
+
+  <!-- Radar sweep wedge -->
+  <path d="M 400 225 L 530 130 A 160 160 0 0 0 400 65 Z" fill="#38bdf8" fill-opacity="0.12"/>
+
+  <!-- Discovered Leads Target Pins -->
+  <g transform="translate(460, 150)">
+    <circle cx="0" cy="0" r="18" fill="#0f172a" stroke="#22c55e" stroke-width="2"/>
+    <circle cx="0" cy="0" r="5" fill="#22c55e"/>
+    <text x="25" y="4" fill="#ffffff" font-family="sans-serif" font-size="11" font-weight="bold">CEO • Enterprise</text>
+    <text x="25" y="18" fill="#86efac" font-family="sans-serif" font-size="9">Verified • Score: 98%</text>
+  </g>
+
+  <g transform="translate(310, 170)">
+    <circle cx="0" cy="0" r="16" fill="#0f172a" stroke="#38bdf8" stroke-width="2"/>
+    <circle cx="0" cy="0" r="4" fill="#38bdf8"/>
+    <text x="-120" y="4" fill="#ffffff" font-family="sans-serif" font-size="11" font-weight="bold">VP Operations</text>
+    <text x="-120" y="18" fill="#7dd3fc" font-family="sans-serif" font-size="9">Enriched • Score: 94%</text>
+  </g>
+
+  <g transform="translate(480, 290)">
+    <circle cx="0" cy="0" r="14" fill="#0f172a" stroke="#a855f7" stroke-width="2"/>
+    <circle cx="0" cy="0" r="4" fill="#a855f7"/>
+    <text x="22" y="4" fill="#ffffff" font-family="sans-serif" font-size="11" font-weight="bold">Head of Growth</text>
+    <text x="22" y="18" fill="#d8b4fe" font-family="sans-serif" font-size="9">Sync to CRM</text>
+  </g>
+
+  <rect x="280" y="40" width="240" height="32" rx="16" fill="#082f49" stroke="#38bdf8" stroke-width="1"/>
+  <text x="400" y="60" fill="#e0f2fe" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">AUTONOMOUS B2B PROSPECTING</text>
+</svg>

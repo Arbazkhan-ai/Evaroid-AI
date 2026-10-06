@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg12" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#061c14"/>
+      <stop offset="100%" stop-color="#0b2e22"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg12)"/>
+
+  <!-- Browser window frame -->
+  <rect x="80" y="50" width="640" height="350" rx="12" fill="#02140d" stroke="#10b981" stroke-width="1.5"/>
+  <circle cx="110" cy="72" r="5" fill="#ef4444"/>
+  <circle cx="125" cy="72" r="5" fill="#f59e0b"/>
+  <circle cx="140" cy="72" r="5" fill="#10b981"/>
+
+  <!-- Store Hero / Product Cards inside window -->
+  <rect x="110" y="100" width="360" height="110" rx="8" fill="#064e3b" stroke="#059669" stroke-width="1"/>
+  <text x="135" y="145" fill="#ffffff" font-family="sans-serif" font-size="16" font-weight="bold">ENTERPRISE STORE PLATFORM</text>
+  <text x="135" y="170" fill="#a7f3d0" font-family="sans-serif" font-size="11">Django ORM • PostgreSQL • Real-Time Inventory</text>
+
+  <!-- Right Order Stats -->
+  <rect x="490" y="100" width="200" height="110" rx="8" fill="#064e3b" stroke="#059669" stroke-width="1"/>
+  <text x="510" y="130" fill="#a7f3d0" font-family="sans-serif" font-size="10">DAILY GMV</text>
+  <text x="510" y="160" fill="#ffffff" font-family="sans-serif" font-size="20" font-weight="bold">$48,250</text>
+  <text x="510" y="185" fill="#34d399" font-family="sans-serif" font-size="10">↑ 24% conversion uplift</text>
+
+  <!-- Product items grid below -->
+  <rect x="110" y="230" width="170" height="140" rx="6" fill="#042f20"/>
+  <rect x="300" y="230" width="170" height="140" rx="6" fill="#042f20"/>
+  <rect x="490" y="230" width="200" height="140" rx="6" fill="#042f20"/>
+</svg>

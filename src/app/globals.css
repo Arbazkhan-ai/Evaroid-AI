@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-white text-slate-700 antialiased;
+}
+
+::selection {
+  background-color: rgba(79, 70, 229, 0.15);
+  color: #3730A3;
+}
+
+/* Crisp subtle grid backdrop for white theme */
+.bg-grid {
+  background-image:
+    linear-gradient(rgba(79, 70, 229, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(79, 70, 229, 0.04) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+/* Gradient text */
+.text-gradient {
+  @apply bg-gradient-to-r from-indigo-600 via-indigo-500 to-purple-600 bg-clip-text text-transparent;
+}
+
+/* Card for white theme */
+.card-glow {
+  @apply rounded-2xl border border-slate-200/80 bg-white shadow-[0_2px_12px_-2px_rgba(0,0,0,0.04)] transition-all duration-300;
+}
+.card-glow:hover {
+  @apply border-indigo-300 shadow-[0_12px_32px_-4px_rgba(79,70,229,0.12)];
+  transform: translateY(-4px);
+}

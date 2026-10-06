@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg13" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1f091c"/>
+      <stop offset="100%" stop-color="#120426"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg13)"/>
+
+  <!-- Featured Cinema Banner -->
+  <rect x="90" y="60" width="620" height="180" rx="14" fill="#2e082b" stroke="#e11d48" stroke-width="1.5"/>
+  <polygon points="180,120 230,150 180,180" fill="#ffffff" fill-opacity="0.9"/>
+  <text x="260" y="145" fill="#ffffff" font-family="sans-serif" font-size="22" font-weight="bold">CINEVERSE STREAMING</text>
+  <text x="260" y="170" fill="#fda4af" font-family="sans-serif" font-size="12">Interactive Cinema Hub • 4K HDR • Instant Search</text>
+
+  <!-- Movie Thumbnails Carousel -->
+  <rect x="90" y="260" width="130" height="140" rx="8" fill="#3b0764"/>
+  <rect x="240" y="260" width="130" height="140" rx="8" fill="#4c0519"/>
+  <rect x="390" y="260" width="130" height="140" rx="8" fill="#1e1b4b"/>
+  <rect x="540" y="260" width="170" height="140" rx="8" fill="#312e81"/>
+</svg>

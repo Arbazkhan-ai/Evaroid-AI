@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a192f"/>
+      <stop offset="100%" stop-color="#0f2b48"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg5)"/>
+
+  <!-- Video player UI window -->
+  <rect x="80" y="60" width="460" height="280" rx="12" fill="#020c1b" stroke="#38bdf8" stroke-width="1.5"/>
+  <polygon points="280,180 340,210 280,240" fill="#38bdf8" fill-opacity="0.6"/>
+
+  <!-- Bounding boxes in player window -->
+  <rect x="140" y="120" width="90" height="180" fill="none" stroke="#22c55e" stroke-width="2"/>
+  <text x="140" y="112" fill="#22c55e" font-family="monospace" font-size="10">BATSMAN [0.97]</text>
+
+  <rect x="360" y="110" width="90" height="190" fill="none" stroke="#38bdf8" stroke-width="2"/>
+  <text x="360" y="102" fill="#38bdf8" font-family="monospace" font-size="10">BOWLER [0.95]</text>
+
+  <!-- Side Metrics Panel -->
+  <rect x="560" y="60" width="180" height="280" rx="12" fill="#0b1e36" stroke="#1e3a5f" stroke-width="1"/>
+  <text x="580" y="95" fill="#38bdf8" font-family="sans-serif" font-size="12" font-weight="bold">TELEMETRY</text>
+  
+  <text x="580" y="130" fill="#94a3b8" font-family="sans-serif" font-size="10">Release Speed</text>
+  <text x="580" y="150" fill="#ffffff" font-family="sans-serif" font-size="16" font-weight="bold">138.4 km/h</text>
+
+  <text x="580" y="190" fill="#94a3b8" font-family="sans-serif" font-size="10">Elbow Extension</text>
+  <text x="580" y="210" fill="#ffffff" font-family="sans-serif" font-size="16" font-weight="bold">11.2° (Legal)</text>
+
+  <text x="580" y="250" fill="#94a3b8" font-family="sans-serif" font-size="10">Bat Speed Peak</text>
+  <text x="580" y="270" fill="#22c55e" font-family="sans-serif" font-size="16" font-weight="bold">124 km/h</text>
+
+  <!-- Bottom Timeline -->
+  <rect x="80" y="360" width="660" height="36" rx="8" fill="#0b1e36"/>
+  <rect x="80" y="375" width="280" height="6" fill="#38bdf8"/>
+  <circle cx="360" cy="378" r="8" fill="#ffffff"/>
+</svg>
