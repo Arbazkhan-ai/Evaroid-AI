@@ -1,6 +1,14 @@
 import { NextResponse } from "next/server";
 import { cannedResponses, websiteKnowledge } from "@/data/agentKnowledge";
 
+function cleanNoMarkdown(text: string): string {
+  return text
+    .replace(/\*\*/g, "")
+    .replace(/###\s*/g, "")
+    .replace(/##\s*/g, "")
+    .replace(/#\s*/g, "");
+}
+
 export async function POST(req: Request) {
   try {
     const { message } = await req.json();
@@ -51,14 +59,6 @@ export async function POST(req: Request) {
         bestMatch = item;
       }
     }
-
-function cleanNoMarkdown(text: string): string {
-  return text
-    .replace(/\*\*/g, "")
-    .replace(/###\s*/g, "")
-    .replace(/##\s*/g, "")
-    .replace(/#\s*/g, "");
-}
 
     if (bestMatch && highestScore > 0) {
       return NextResponse.json({

@@ -4,22 +4,48 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { personas, Persona } from "@/data/personas";
 
+const customRoleSuggestions = [
+  "Real Estate Agent",
+  "Lawyer / Legal",
+  "Accountant / Tax",
+  "Teacher / Education",
+  "Restaurant / Food",
+  "Agency Owner",
+];
+
 export default function PersonaModal() {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedPersona, setSelectedPersona] = useState<Persona | null>(null);
   const [activePersonaId, setActivePersonaId] = useState<string | null>(null);
+  const [customRoleName, setCustomRoleName] = useState<string>("");
+  const [isEnteringCustom, setIsEnteringCustom] = useState<boolean>(false);
+  const [customInput, setCustomInput] = useState<string>("");
   const [hasMounted, setHasMounted] = useState(false);
 
   // Initialize and check localStorage
   useEffect(() => {
     setHasMounted(true);
     const savedPersonaId = localStorage.getItem("evaroid_persona");
+    const savedCustomRole = localStorage.getItem("evaroid_custom_role");
     const dismissedThisSession = sessionStorage.getItem("evaroid_persona_prompted");
 
     if (savedPersonaId) {
       setActivePersonaId(savedPersonaId);
       const found = personas.find((p) => p.id === savedPersonaId);
-      if (found) setSelectedPersona(found);
+
+      if (savedPersonaId === "other" && savedCustomRole) {
+        setCustomRoleName(savedCustomRole);
+        if (found) {
+          setSelectedPersona({
+            ...found,
+            label: savedCustomRole,
+            headline: `Custom AI Automation for ${savedCustomRole}`,
+            whatsappMessage: `Hi Evaroid.AI, I work in ${savedCustomRole} and I am looking for custom AI automation for our workflows.`,
+          });
+        }
+      } else if (found) {
+        setSelectedPersona(found);
+      }
     } else if (!dismissedThisSession) {
       // Show modal after a polite 700ms delay on initial visit
       const timer = setTimeout(() => {
@@ -41,9 +67,34 @@ export default function PersonaModal() {
   }, [isOpen]);
 
   const handleSelectPersona = (persona: Persona) => {
+    if (persona.id === "other") {
+      setIsEnteringCustom(true);
+      return;
+    }
     setSelectedPersona(persona);
     setActivePersonaId(persona.id);
     localStorage.setItem("evaroid_persona", persona.id);
+    localStorage.removeItem("evaroid_custom_role");
+  };
+
+  const handleConfirmCustomRole = (e?: React.FormEvent) => {
+    if (e) e.preventDefault();
+    const role = customInput.trim() || "Custom Role";
+
+    const baseOther = personas.find((p) => p.id === "other") || personas[0];
+    const customized: Persona = {
+      ...baseOther,
+      label: role,
+      headline: `Custom AI Automation for ${role}`,
+      whatsappMessage: `Hi Evaroid.AI, I work in ${role} and I am looking for custom AI automation for our workflows.`,
+    };
+
+    setCustomRoleName(role);
+    setSelectedPersona(customized);
+    setActivePersonaId("other");
+    setIsEnteringCustom(false);
+    localStorage.setItem("evaroid_persona", "other");
+    localStorage.setItem("evaroid_custom_role", role);
   };
 
   const handleClose = () => {
@@ -53,11 +104,19 @@ export default function PersonaModal() {
 
   const handleReset = () => {
     setSelectedPersona(null);
+    setIsEnteringCustom(false);
+    setCustomInput("");
   };
 
   if (!hasMounted) return null;
 
   const currentPersona = personas.find((p) => p.id === activePersonaId);
+  const displayLabel =
+    activePersonaId === "other" && customRoleName
+      ? customRoleName
+      : currentPersona
+      ? currentPersona.label
+      : "Who Are You?";
 
   return (
     <>
@@ -69,10 +128,10 @@ export default function PersonaModal() {
           title="Click to personalize website experience"
         >
           <span className="text-base">
-            {currentPersona ? currentPersona.icon : "✨"}
+            {activePersonaId === "other" ? "✍️" : currentPersona ? currentPersona.icon : "✨"}
           </span>
           <span>
-            {currentPersona ? `${currentPersona.label} Mode` : "Who Are You? (Personalize)"}
+            {currentPersona ? `${displayLabel} Mode` : "Who Are You? (Personalize)"}
           </span>
           <span className="rounded-full bg-slate-100 px-1.5 py-0.5 text-[10px] text-slate-500 group-hover:bg-indigo-50 group-hover:text-indigo-600">
             Switch
@@ -99,8 +158,83 @@ export default function PersonaModal() {
               ✕
             </button>
 
-            {/* View 1: If no persona is selected yet, or switching */}
-            {!selectedPersona ? (
+            {/* View 1: If user clicked 'Other' and is typing their profession */}
+            {isEnteringCustom ? (
+              <div className="animate-fadeIn">
+                <button
+                  onClick={() => setIsEnteringCustom(false)}
+                  className="inline-flex items-center gap-1 text-xs font-semibold text-indigo-600 hover:text-indigo-800 transition"
+                >
+                  ← Back to all roles
+                </button>
+
+                <div className="mt-4 text-center sm:text-left">
+                  <span className="inline-flex items-center gap-1.5 rounded-full border border-indigo-100 bg-indigo-50 px-3.5 py-1.5 text-xs font-bold uppercase tracking-widest text-indigo-600">
+                    <span>✍️</span> Custom Role
+                  </span>
+                  <h2 className="mt-3 text-2xl font-extrabold text-slate-900 md:text-3xl">
+                    What is your profession or industry?
+                  </h2>
+                  <p className="mt-2 text-sm text-slate-600">
+                    Type your job title, business type, or industry. We will tailor custom AI recommendations for your field.
+                  </p>
+                </div>
+
+                <form onSubmit={handleConfirmCustomRole} className="mt-6 space-y-4">
+                  <div>
+                    <label className="block text-xs font-bold uppercase tracking-wider text-slate-700">
+                      Your Field / Job Title
+                    </label>
+                    <input
+                      type="text"
+                      autoFocus
+                      required
+                      value={customInput}
+                      onChange={(e) => setCustomInput(e.target.value)}
+                      placeholder="e.g. Real Estate Agent, Lawyer, Accountant, Teacher..."
+                      className="mt-1.5 w-full rounded-2xl border border-slate-300 px-4 py-3 text-sm text-slate-900 placeholder-slate-400 focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500/20 shadow-xs"
+                    />
+                  </div>
+
+                  {/* Suggestion Chips */}
+                  <div>
+                    <span className="text-[11px] font-semibold text-slate-500">
+                      Or click an example:
+                    </span>
+                    <div className="mt-2 flex flex-wrap gap-2">
+                      {customRoleSuggestions.map((role) => (
+                        <button
+                          key={role}
+                          type="button"
+                          onClick={() => setCustomInput(role)}
+                          className="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-medium text-slate-700 hover:border-indigo-300 hover:bg-indigo-50 hover:text-indigo-700 transition"
+                        >
+                          {role}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-end gap-3">
+                    <button
+                      type="button"
+                      onClick={() => setIsEnteringCustom(false)}
+                      className="rounded-xl border border-slate-300 px-4 py-2.5 text-xs font-semibold text-slate-700 hover:bg-slate-50"
+                    >
+                      Cancel
+                    </button>
+                    <button
+                      type="submit"
+                      disabled={!customInput.trim()}
+                      className="rounded-xl bg-indigo-600 px-6 py-2.5 text-xs font-bold text-white shadow-sm hover:bg-indigo-700 disabled:opacity-40 transition"
+                    >
+                      Continue & Tailor Website →
+                    </button>
+                  </div>
+                </form>
+              </div>
+            ) : !selectedPersona ? (
+              /* View 2: Role selection grid */
               <div>
                 <div className="text-center">
                   <span className="inline-flex items-center gap-1.5 rounded-full border border-indigo-100 bg-indigo-50 px-3.5 py-1.5 text-xs font-bold uppercase tracking-widest text-indigo-600">
@@ -113,7 +247,7 @@ export default function PersonaModal() {
                     Who are you?
                   </h2>
                   <p className="mt-2 text-sm text-slate-600 max-w-lg mx-auto leading-relaxed">
-                    Select your field or role below. We'll instantly personalize our AI solutions,
+                    Select your field or role below. We will instantly personalize our AI solutions,
                     demos, and case studies to match what matters most to you.
                   </p>
                 </div>
@@ -152,8 +286,8 @@ export default function PersonaModal() {
                 </div>
               </div>
             ) : (
-              /* View 2: Tailored Persona Presentation (e.g. Doctor, Founder, Dev) */
-              <div>
+              /* View 3: Tailored Persona Presentation (Doctor, Business Owner, Developer, or Custom Typed Role) */
+              <div className="animate-fadeIn">
                 {/* Header with Switcher Button */}
                 <div className="flex items-center justify-between gap-3 border-b border-slate-100 pb-4">
                   <div className="flex items-center gap-2.5">

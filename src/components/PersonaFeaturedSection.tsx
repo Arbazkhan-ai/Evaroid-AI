@@ -12,9 +12,23 @@ export default function PersonaFeaturedSection() {
     setHasMounted(true);
     const update = () => {
       const saved = localStorage.getItem("evaroid_persona");
+      const custom = localStorage.getItem("evaroid_custom_role");
       if (saved) {
         const found = personas.find((p) => p.id === saved);
-        setActivePersona(found || null);
+        if (found) {
+          if (saved === "other" && custom) {
+            setActivePersona({
+              ...found,
+              label: custom,
+              headline: `Custom AI Automation for ${custom}`,
+              whatsappMessage: `Hi Evaroid.AI, I work in ${custom} and I am looking for custom AI automation for our workflows.`,
+            });
+          } else {
+            setActivePersona(found);
+          }
+        } else {
+          setActivePersona(null);
+        }
       } else {
         setActivePersona(null);
       }
