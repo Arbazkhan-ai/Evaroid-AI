@@ -61,8 +61,8 @@ export default function PersonaModal() {
 
   return (
     <>
-      {/* Persistent Floating Persona Badge in Bottom-Right Corner */}
-      <div className="fixed bottom-6 right-6 z-40">
+      {/* Persistent Floating Persona Badge in Bottom-Left Corner */}
+      <div className="fixed bottom-6 left-6 z-40">
         <button
           onClick={() => setIsOpen(true)}
           className="group flex items-center gap-2 rounded-full border border-slate-200/80 bg-white/95 px-4 py-2.5 text-xs font-semibold text-slate-800 shadow-lg backdrop-blur-md transition-all hover:scale-105 hover:border-indigo-300 hover:shadow-xl hover:text-indigo-600"

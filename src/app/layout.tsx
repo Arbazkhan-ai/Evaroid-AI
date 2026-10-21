@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import PersonaModal from "@/components/PersonaModal";
+import AIAssistantWidget from "@/components/AIAssistantWidget";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
@@ -21,6 +22,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main className="flex-1">{children}</main>
         <Footer />
         <PersonaModal />
+        <AIAssistantWidget />
       </body>
     </html>
   );
