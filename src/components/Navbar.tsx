@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import PersonaBanner from "./PersonaBanner";
 
 const links = [
   { href: "/", label: "Home" },
@@ -30,6 +31,7 @@ export default function Navbar() {
           : "bg-white/60 backdrop-blur-md border-b border-slate-100"
       }`}
     >
+      <PersonaBanner />
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         <Link href="/" className="flex items-center gap-2.5 text-xl font-bold text-slate-900">
           <span className="grid h-9 w-9 place-items-center rounded-xl bg-gradient-to-br from-accent to-fuchsia-600 text-sm font-black text-white shadow-md shadow-accent/20">

@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import PersonaModal from "@/components/PersonaModal";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
@@ -19,6 +20,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
+        <PersonaModal />
       </body>
     </html>
   );

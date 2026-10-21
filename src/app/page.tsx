@@ -1,4 +1,5 @@
 import Hero from "@/components/Hero";
+import PersonaFeaturedSection from "@/components/PersonaFeaturedSection";
 import Services from "@/components/Services";
 import Stats from "@/components/Stats";
 import Work from "@/components/Work";
@@ -9,6 +10,7 @@ export default function HomePage() {
   return (
     <>
       <Hero />
+      <PersonaFeaturedSection />
       <Stats />
       <Services />
       <Work />
