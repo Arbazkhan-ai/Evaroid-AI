@@ -40,7 +40,7 @@ export default function PersonaModal() {
             ...found,
             label: savedCustomRole,
             headline: `Custom AI Automation for ${savedCustomRole}`,
-            whatsappMessage: `Hi Evaroid.AI, I work in ${savedCustomRole} and I am looking for custom AI automation for our workflows.`,
+            whatsappMessage: `Hi Evaroid, I work in ${savedCustomRole} and I am looking for custom AI automation for our workflows.`,
           });
         }
       } else if (found) {
@@ -86,7 +86,7 @@ export default function PersonaModal() {
       ...baseOther,
       label: role,
       headline: `Custom AI Automation for ${role}`,
-      whatsappMessage: `Hi Evaroid.AI, I work in ${role} and I am looking for custom AI automation for our workflows.`,
+      whatsappMessage: `Hi Evaroid, I work in ${role} and I am looking for custom AI automation for our workflows.`,
     };
 
     setCustomRoleName(role);

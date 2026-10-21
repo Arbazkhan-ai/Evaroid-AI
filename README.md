@@ -1,4 +1,4 @@
-# Evaroid.AI — Company Website (Next.js 14 + Backend)
+# Evaroid — Company Website (Next.js 14 + Backend)
 
 A clean, modern software-company website with a working backend.
 

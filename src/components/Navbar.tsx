@@ -37,7 +37,7 @@ export default function Navbar() {
         <Link href="/" className="flex items-center gap-2.5 group">
           <Image
             src="/logo.svg"
-            alt="Evaroid.AI Logo"
+            alt="Evaroid Logo"
             width={44}
             height={44}
             className="h-10 w-10 object-contain transition-transform group-hover:scale-105"
@@ -45,7 +45,7 @@ export default function Navbar() {
             priority
           />
           <span className="text-xl font-extrabold tracking-tight text-slate-900">
-            Evaroid<span className="text-indigo-600">.AI</span>
+            Evaroid
           </span>
         </Link>
 

@@ -16,7 +16,7 @@ export default function Work() {
               Proven <span className="text-gradient">Case Studies</span>
             </h2>
             <p className="mt-2 text-slate-600 text-base">
-              Autonomous AI agents, real-time computer vision systems, and modern web platforms engineered by Evaroid.AI.
+              Autonomous AI agents, real-time computer vision systems, and modern web platforms engineered by Evaroid.
             </p>
           </div>
           <div className="flex items-center gap-4">

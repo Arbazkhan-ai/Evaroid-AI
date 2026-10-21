@@ -69,7 +69,7 @@ export async function POST(req: Request) {
 
     // 2. Fallback smart concierge response with full navigation options
     const fallbackReply =
-      `I'm the Evaroid.AI Intelligent Concierge. Here is a quick snapshot of what we can help you with:\n\n` +
+      `I'm the Evaroid Intelligent Concierge. Here is a quick snapshot of what we can help you with:\n\n` +
       `• AI and Multi-Agent Workflows: Autonomous agents executing operational processes 24/7.\n` +
       `• Healthcare and Doctor Solutions: Automated patient WhatsApp booking, triage, and emergency alert AI.\n` +
       `• Modern Web Engineering: Next.js 14, high-converting platforms, and cloud databases.\n` +

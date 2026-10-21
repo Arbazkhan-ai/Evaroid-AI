@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import CareersClient from "@/components/CareersClient";
 
 export const metadata: Metadata = {
-  title: "Careers — Evaroid.AI",
+  title: "Careers — Evaroid",
   description:
-    "Join Evaroid.AI. We engineer enterprise-grade autonomous AI agents, intelligent pipelines, and high-performance modern web platforms.",
+    "Join Evaroid. We engineer enterprise-grade autonomous AI agents, intelligent pipelines, and high-performance modern web platforms.",
 };
 
 export default function CareersPage() {
@@ -19,7 +19,7 @@ export default function CareersPage() {
           Shape the future of <span className="text-gradient">AI Automation</span>
         </h1>
         <p className="mt-6 text-lg leading-relaxed text-slate-600">
-          At Evaroid.AI, we are pioneering production-grade multi-agent systems and mission-critical
+          At Evaroid, we are pioneering production-grade multi-agent systems and mission-critical
           intelligent workflows. We believe in lean, high-velocity teams, high agency, and
           building software that creates unmistakable economic value.
         </p>

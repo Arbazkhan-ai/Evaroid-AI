@@ -104,7 +104,7 @@ export default function CareersClient() {
         {filteredJobs.map((job) => {
           const isExpanded = expandedJobId === job.id;
           const waApplyUrl = `https://wa.me/923135300649?text=${encodeURIComponent(
-            `Hi Evaroid.AI team, I'm interested in applying for the ${job.title} position.`
+            `Hi Evaroid team, I'm interested in applying for the ${job.title} position.`
           )}`;
 
           return (
@@ -231,7 +231,7 @@ export default function CareersClient() {
       <div className="mt-24">
         <div className="text-center">
           <span className="rounded-full border border-indigo-100 bg-indigo-50 px-3.5 py-1.5 text-xs font-bold uppercase tracking-widest text-indigo-600">
-            Why Evaroid.AI
+            Why Evaroid
           </span>
           <h2 className="mt-3 text-3xl font-extrabold text-slate-900 md:text-4xl">
             Perks built for high-autonomy builders
@@ -272,13 +272,13 @@ export default function CareersClient() {
           </div>
           <div className="flex flex-wrap gap-3">
             <a
-              href="mailto:arbazkhanofficial140@gmail.com?subject=Spontaneous%20Application%20-%20Evaroid.AI"
+              href="mailto:arbazkhanofficial140@gmail.com?subject=Spontaneous%20Application%20-%20Evaroid"
               className="rounded-xl bg-white px-5 py-3 text-sm font-bold text-slate-900 shadow transition hover:bg-slate-100"
             >
               Email Your Resume
             </a>
             <a
-              href="https://wa.me/923135300649?text=Hi%2C%20I%20would%20like%20to%20submit%20an%20open%20application%20for%20Evaroid.AI."
+              href="https://wa.me/923135300649?text=Hi%2C%20I%20would%20like%20to%20submit%20an%20open%20application%20for%20Evaroid."
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-xl border border-emerald-400 bg-emerald-600/30 px-5 py-3 text-sm font-bold text-emerald-200 transition hover:bg-emerald-600/50"
@@ -318,7 +318,7 @@ export default function CareersClient() {
                 <div className="text-4xl">🎉</div>
                 <h4 className="mt-3 text-lg font-bold text-emerald-900">Application Submitted!</h4>
                 <p className="mt-2 text-sm text-emerald-700">
-                  Thank you for applying to Evaroid.AI. Our team has received your details and we will review them promptly.
+                  Thank you for applying to Evaroid. Our team has received your details and we will review them promptly.
                 </p>
                 <div className="mt-5 flex justify-center gap-3">
                   <a
@@ -410,7 +410,7 @@ export default function CareersClient() {
                     rows={3}
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    placeholder="Briefly describe your relevant experience, key projects, and why you're interested in Evaroid.AI..."
+                    placeholder="Briefly describe your relevant experience, key projects, and why you're interested in Evaroid..."
                     className="mt-1 w-full rounded-xl border border-slate-300 px-4 py-2.5 text-sm text-slate-900 focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500"
                   />
                 </div>

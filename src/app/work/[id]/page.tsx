@@ -15,10 +15,10 @@ export function generateMetadata({
   params: { id: string };
 }): Metadata {
   const project = projects.find((p) => p.id === params.id);
-  if (!project) return { title: "Project Not Found — Evaroid.AI" };
+  if (!project) return { title: "Project Not Found — Evaroid" };
 
   return {
-    title: `${project.name} — Evaroid.AI Case Study`,
+    title: `${project.name} — Evaroid Case Study`,
     description: project.desc,
   };
 }
@@ -137,7 +137,7 @@ export default function ProjectArticlePage({
                 <span className="grid h-6 w-6 place-items-center rounded-full bg-emerald-100 text-xs font-bold text-emerald-700">
                   ✓
                 </span>
-                The Evaroid.AI Solution
+                The Evaroid Solution
               </div>
               <h2 className="mt-3 text-xl font-bold text-slate-900">
                 Engineered AI Architecture

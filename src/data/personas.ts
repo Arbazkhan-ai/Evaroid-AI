@@ -36,7 +36,7 @@ export const personas: Persona[] = [
         desc: "Automated receptionist handling patient appointment booking, rescheduling, and preliminary symptom collection directly via WhatsApp.",
         badge: "Most Popular",
         actionText: "Demo via WhatsApp",
-        actionUrl: "https://wa.me/923135300649?text=Hi%20Evaroid.AI%2C%20I%20am%20a%20Doctor%20and%20want%20to%20see%20the%20Patient%20WhatsApp%20Booking%20demo.",
+        actionUrl: "https://wa.me/923135300649?text=Hi%20Evaroid%2C%20I%20am%20a%20Doctor%20and%20want%20to%20see%20the%20Patient%20WhatsApp%20Booking%20demo.",
       },
       {
         icon: "🚨",
@@ -60,7 +60,7 @@ export const personas: Persona[] = [
       },
     ],
     primaryCtaText: "Get Healthcare AI Consultation",
-    whatsappMessage: "Hi Evaroid.AI, I am a Doctor / Healthcare Provider interested in your medical AI solutions.",
+    whatsappMessage: "Hi Evaroid, I am a Doctor / Healthcare Provider interested in your medical AI solutions.",
     recommendedProjectId: "ai-emergency-trigger",
   },
   {
@@ -92,7 +92,7 @@ export const personas: Persona[] = [
         title: "Omnichannel WhatsApp Sales & Support Bot",
         desc: "Autonomous conversational agents closing sales and resolving inquiries 24/7 with zero lag.",
         actionText: "WhatsApp Chat Demo",
-        actionUrl: "https://wa.me/923135300649?text=Hi%20Evaroid.AI%2C%20I%20am%20a%20Business%20Owner%20interested%20in%20AI%20Automation.",
+        actionUrl: "https://wa.me/923135300649?text=Hi%20Evaroid%2C%20I%20am%20a%20Business%20Owner%20interested%20in%20AI%20Automation.",
       },
       {
         icon: "⚡",
@@ -101,7 +101,7 @@ export const personas: Persona[] = [
       },
     ],
     primaryCtaText: "Schedule Business Strategy Call",
-    whatsappMessage: "Hi Evaroid.AI, I am a Business Owner / Founder looking to automate our company workflows.",
+    whatsappMessage: "Hi Evaroid, I am a Business Owner / Founder looking to automate our company workflows.",
     recommendedProjectId: "agentic-ai-suite",
   },
   {
@@ -144,7 +144,7 @@ export const personas: Persona[] = [
       },
     ],
     primaryCtaText: "Explore GitHub & Engineering Stack",
-    whatsappMessage: "Hi Evaroid.AI, I am a Developer / Tech Lead interested in discussing your technical architecture.",
+    whatsappMessage: "Hi Evaroid, I am a Developer / Tech Lead interested in discussing your technical architecture.",
     recommendedProjectId: "agentic-ai-suite",
   },
   {
@@ -162,7 +162,7 @@ export const personas: Persona[] = [
         desc: "Recover 25%+ of abandoned carts automatically by pinging customers with personalized offers on WhatsApp.",
         badge: "High ROI",
         actionText: "Test Recovery Flow",
-        actionUrl: "https://wa.me/923135300649?text=Hi%20Evaroid.AI%2C%20tell%20me%20about%20WhatsApp%20Cart%20Recovery.",
+        actionUrl: "https://wa.me/923135300649?text=Hi%20Evaroid%2C%20tell%20me%20about%20WhatsApp%20Cart%20Recovery.",
       },
       {
         icon: "📦",
@@ -183,7 +183,7 @@ export const personas: Persona[] = [
       },
     ],
     primaryCtaText: "Boost Your Store Revenue",
-    whatsappMessage: "Hi Evaroid.AI, I run an E-Commerce store and want to integrate automated sales AI.",
+    whatsappMessage: "Hi Evaroid, I run an E-Commerce store and want to integrate automated sales AI.",
   },
   {
     id: "other",
@@ -207,7 +207,7 @@ export const personas: Persona[] = [
         title: "Dedicated WhatsApp Assistant",
         desc: "Automated booking, lead qualification, and customer support connected directly to your WhatsApp.",
         actionText: "Chat on WhatsApp",
-        actionUrl: "https://wa.me/923135300649?text=Hi%20Evaroid.AI%2C%20I%20need%20a%20custom%20AI%20solution%20for%20my%20business.",
+        actionUrl: "https://wa.me/923135300649?text=Hi%20Evaroid%2C%20I%20need%20a%20custom%20AI%20solution%20for%20my%20business.",
       },
       {
         icon: "📊",
@@ -218,6 +218,6 @@ export const personas: Persona[] = [
       },
     ],
     primaryCtaText: "Discuss Your Custom Project",
-    whatsappMessage: "Hi Evaroid.AI, I need a custom AI automation solution for my specific field.",
+    whatsappMessage: "Hi Evaroid, I need a custom AI automation solution for my specific field.",
   },
 ];

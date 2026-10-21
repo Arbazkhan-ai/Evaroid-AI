@@ -17,7 +17,7 @@ export default function Hero() {
         </h1>
 
         <p className="mx-auto mt-6 max-w-2xl text-lg text-slate-600 animate-fade-up">
-          At Evaroid.AI, our core focus is building autonomous AI agents and intelligent workflows
+          At Evaroid, our core focus is building autonomous AI agents and intelligent workflows
           that run your operations on autopilot — paired with sleek, high-converting web platforms.
         </p>
 

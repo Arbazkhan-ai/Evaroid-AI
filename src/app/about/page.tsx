@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-export const metadata: Metadata = { title: "About — Evaroid.AI" };
+export const metadata: Metadata = { title: "About — Evaroid" };
 
 const values = [
   { title: "AI-First Pragmatism", desc: "We don't build AI for the hype — we build measurable automations that save countless hours and boost bottom-line revenue." },
@@ -19,7 +19,7 @@ export default function AboutPage() {
           Putting business operations on <span className="text-gradient">AI autopilot</span>
         </h1>
         <p className="mt-6 text-lg leading-relaxed text-slate-600">
-          At Evaroid.AI, our primary focus is engineering enterprise-grade AI automation and
+          At Evaroid, our primary focus is engineering enterprise-grade AI automation and
           autonomous agent workflows. We help businesses eliminate repetitive manual processes,
           streamline customer touchpoints, and pair those intelligent backends with high-converting,
           modern web platforms.

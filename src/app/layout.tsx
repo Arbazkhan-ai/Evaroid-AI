@@ -9,9 +9,9 @@ import AIAssistantWidget from "@/components/AIAssistantWidget";
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
-  title: "Evaroid.AI — Intelligent AI Automation & Web Engineering",
+  title: "Evaroid — Intelligent Automation & Web Engineering",
   description:
-    "Evaroid.AI specializes in custom AI automation, autonomous agents, and modern web platforms that streamline operations and accelerate growth.",
+    "Evaroid specializes in custom AI automation, autonomous agents, and modern web platforms that streamline operations and accelerate growth.",
   icons: {
     icon: "/logo.svg",
     shortcut: "/logo.svg",

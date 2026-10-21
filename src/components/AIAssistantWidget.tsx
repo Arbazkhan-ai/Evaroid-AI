@@ -27,7 +27,7 @@ export default function AIAssistantWidget() {
     {
       sender: "agent",
       text:
-        "Hello! 👋 I'm the Evaroid.AI Assistant.\n\nAsk me anything about our website, autonomous AI agents, doctor and healthcare systems, case studies, or career openings!",
+        "Hello! 👋 I'm the Evaroid Assistant.\n\nAsk me anything about our website, autonomous AI agents, doctor and healthcare systems, case studies, or career openings!",
       time: "Just now",
       links: [
         { label: "🩺 Doctor Solutions", href: "/work/ai-emergency-trigger" },
@@ -139,7 +139,7 @@ export default function AIAssistantWidget() {
               <div className="relative h-10 w-10 overflow-hidden rounded-2xl bg-white p-1 shadow-sm shrink-0">
                 <Image
                   src="/logo.svg"
-                  alt="Evaroid AI"
+                  alt="Evaroid"
                   width={40}
                   height={40}
                   className="h-full w-full object-contain"
@@ -148,13 +148,13 @@ export default function AIAssistantWidget() {
               </div>
               <div>
                 <div className="flex items-center gap-2">
-                  <h3 className="text-sm font-bold tracking-tight">Evaroid AI Concierge</h3>
+                  <h3 className="text-sm font-bold tracking-tight">Evaroid Concierge</h3>
                   <span className="rounded-full bg-emerald-500/20 px-2 py-0.5 text-[10px] font-bold text-emerald-300">
                     Live
                   </span>
                 </div>
                 <p className="text-[11px] text-slate-300">
-                  Instant answers about Evaroid.AI
+                  Instant answers about Evaroid
                 </p>
               </div>
             </div>
@@ -285,7 +285,7 @@ export default function AIAssistantWidget() {
 
             <div className="mt-2 text-center">
               <a
-                href="https://wa.me/923135300649?text=Hi%20Evaroid.AI%2C%20I%20have%20an%20inquiry%20regarding%20your%20services."
+                href="https://wa.me/923135300649?text=Hi%20Evaroid%2C%20I%20have%20an%20inquiry%20regarding%20your%20services."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[11px] font-semibold text-emerald-600 hover:text-emerald-700"

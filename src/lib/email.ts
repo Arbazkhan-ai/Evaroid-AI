@@ -18,7 +18,7 @@ export async function sendContactNotification({
   const smtpPort = parseInt(process.env.SMTP_PORT || "465", 10);
   const smtpUser = process.env.SMTP_USER || "arbazkhanofficial140@gmail.com";
   const smtpPass = process.env.SMTP_PASS;
-  const smtpFrom = process.env.SMTP_FROM || `"Evaroid.AI Inquiries" <${smtpUser}>`;
+  const smtpFrom = process.env.SMTP_FROM || `"Evaroid Inquiries" <${smtpUser}>`;
 
   // Check if SMTP password is provided
   const hasSmtpPassword = smtpPass && smtpPass !== "your-app-password" && smtpPass !== "your-16-char-app-password";
@@ -36,7 +36,7 @@ export async function sendContactNotification({
         },
       });
 
-      const subject = `⚡ New Lead from Evaroid.AI: ${name} ${company ? `(${company})` : ""}`;
+      const subject = `⚡ New Lead from Evaroid: ${name} ${company ? `(${company})` : ""}`;
 
       const htmlContent = `
         <!DOCTYPE html>
@@ -62,7 +62,7 @@ export async function sendContactNotification({
           <body>
             <div class="container">
               <div class="header">
-                <h1>Evaroid.AI — New Inbound Lead</h1>
+                <h1>Evaroid — New Inbound Lead</h1>
                 <p>You received a new inquiry from your website contact form</p>
               </div>
               <div class="content">
@@ -92,13 +92,13 @@ export async function sendContactNotification({
                 </div>
 
                 <div style="text-align: center; margin-top: 28px;">
-                  <a href="mailto:${email}?subject=Re:%20Inquiry%20regarding%20Evaroid.AI" class="btn-reply">
+                  <a href="mailto:${email}?subject=Re:%20Inquiry%20regarding%20Evaroid" class="btn-reply">
                     Reply Directly to ${name} →
                   </a>
                 </div>
               </div>
               <div class="footer">
-                Delivered automatically by Evaroid.AI • ${new Date().toUTCString()}
+                Delivered automatically by Evaroid • ${new Date().toUTCString()}
               </div>
             </div>
           </body>
@@ -128,15 +128,15 @@ export async function sendContactNotification({
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",
-        Origin: "https://evaroid.ai",
-        Referer: "https://evaroid.ai/contact",
+        Origin: "https://evaroid.online",
+        Referer: "https://evaroid.online/contact",
       },
       body: JSON.stringify({
         name,
         email,
         company: company || "N/A",
         message,
-        _subject: `⚡ New Lead from Evaroid.AI: ${name} ${company ? `(${company})` : ""}`,
+        _subject: `⚡ New Lead from Evaroid: ${name} ${company ? `(${company})` : ""}`,
         _replyto: email,
       }),
     });

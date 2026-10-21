@@ -533,7 +533,7 @@ const svgs = {
   <!-- Portfolio Dashboard UI Mockup -->
   <rect x="100" y="60" width="600" height="330" rx="14" fill="#0b0f19" stroke="#6366f1" stroke-width="1.5"/>
   <rect x="130" y="90" width="240" height="110" rx="8" fill="#1e1b4b"/>
-  <text x="150" y="125" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="bold">EVAROID AI SHOWCASE</text>
+  <text x="150" y="125" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="bold">EVAROID SHOWCASE</text>
   <text x="150" y="145" fill="#a5b4fc" font-family="sans-serif" font-size="10">Next.js 14 • Tailwind • App Router</text>
   <text x="150" y="175" fill="#38bdf8" font-family="sans-serif" font-size="11" font-weight="bold">LIGHTHOUSE SCORE: 100</text>
 

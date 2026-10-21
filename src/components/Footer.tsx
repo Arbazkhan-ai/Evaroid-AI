@@ -9,14 +9,14 @@ export default function Footer() {
           <div className="flex items-center gap-2.5 text-lg font-bold text-slate-900">
             <Image
               src="/logo.svg"
-              alt="Evaroid.AI Logo"
+              alt="Evaroid Logo"
               width={36}
               height={36}
               className="h-9 w-9 object-contain"
               unoptimized
             />
             <span className="font-extrabold tracking-tight">
-              Evaroid<span className="text-indigo-600">.AI</span>
+              Evaroid
             </span>
           </div>
           <p className="mt-4 text-sm text-slate-600 leading-relaxed">
@@ -60,7 +60,7 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-slate-200/60 py-6 text-center text-xs text-slate-500">
-        © {new Date().getFullYear()} Evaroid.AI. All rights reserved.
+        © {new Date().getFullYear()} Evaroid. All rights reserved.
       </div>
     </footer>
   );

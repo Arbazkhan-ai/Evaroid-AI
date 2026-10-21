@@ -33,7 +33,7 @@ export const projects: Project[] = [
     imageUrl: "/images/projects/agentic-ai-suite.svg",
     readTime: "5 min read",
     challenge: "Enterprise workflows often involve siloed tools, delayed hand-offs, and excessive human intervention for repetitive decision loops and knowledge querying.",
-    solution: "Evaroid.AI engineered an orchestrator system leveraging LangGraph cyclic state machines, dynamic RAG retrievers, and self-correcting tool-calling pipelines to autonomously execute end-to-end tasks.",
+    solution: "Evaroid engineered an orchestrator system leveraging LangGraph cyclic state machines, dynamic RAG retrievers, and self-correcting tool-calling pipelines to autonomously execute end-to-end tasks.",
     architectureSteps: [
       "User objective ingestion and natural language plan decomposition",
       "Dynamic document embedding search via high-dimensional vector database",
@@ -101,7 +101,7 @@ export const projects: Project[] = [
     imageUrl: "/images/projects/helmet-detection-yolo.svg",
     readTime: "5 min read",
     challenge: "Industrial worksites, construction areas, and factories struggle with PPE compliance enforcement, creating immense regulatory liability and severe safety hazards.",
-    solution: "Evaroid.AI deployed a low-latency edge computer vision pipeline based on a customized YOLOv8 model that tracks worker personnel and checks for hardhat compliance in real time.",
+    solution: "Evaroid deployed a low-latency edge computer vision pipeline based on a customized YOLOv8 model that tracks worker personnel and checks for hardhat compliance in real time.",
     architectureSteps: [
       "RTSP video stream ingestion from on-site IP surveillance cameras",
       "Frame preprocessing, normalization, and hardware-accelerated batching",

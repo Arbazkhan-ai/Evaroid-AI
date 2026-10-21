@@ -20,7 +20,7 @@ export default function PersonaBanner() {
               ...found,
               label: custom,
               headline: `Custom AI Automation for ${custom}`,
-              whatsappMessage: `Hi Evaroid.AI, I work in ${custom} and I am looking for custom AI automation for our workflows.`,
+              whatsappMessage: `Hi Evaroid, I work in ${custom} and I am looking for custom AI automation for our workflows.`,
             });
           } else {
             setActivePersona(found);

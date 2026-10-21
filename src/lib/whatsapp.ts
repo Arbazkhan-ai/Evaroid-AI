@@ -24,7 +24,7 @@ export async function sendWhatsAppNotification({
 
   // Format clean WhatsApp markdown text
   const text = encodeURIComponent(
-    `⚡ *New Lead from Evaroid.AI*\n\n` +
+    `⚡ *New Lead from Evaroid*\n\n` +
     `👤 *Name:* ${name}\n` +
     `📧 *Email:* ${email}\n` +
     `🏢 *Company:* ${company || "Individual"}\n\n` +
@@ -76,7 +76,7 @@ export async function sendJobApplicationWhatsApp({
   }
 
   const text = encodeURIComponent(
-    `💼 *New Job Application — Evaroid.AI*\n\n` +
+    `💼 *New Job Application — Evaroid*\n\n` +
     `👤 *Applicant:* ${name}\n` +
     `📌 *Role Applied:* ${role}\n` +
     `📧 *Email:* ${email}\n` +

@@ -1,7 +1,7 @@
 import ContactForm from "@/components/ContactForm";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = { title: "Contact — Evaroid.AI" };
+export const metadata: Metadata = { title: "Contact — Evaroid" };
 
 const contactInfo = [
   { label: "Email", value: "arbazkhanofficial140@gmail.com", href: "mailto:arbazkhanofficial140@gmail.com" },

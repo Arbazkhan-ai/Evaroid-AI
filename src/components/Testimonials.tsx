@@ -1,7 +1,7 @@
 const items = [
   {
     quote:
-      "Evaroid.AI automated our entire inbound lead qualification and CRM pipeline. Response time went from 4 hours to 30 seconds, saving us 30+ hours every week.",
+      "Evaroid automated our entire inbound lead qualification and CRM pipeline. Response time went from 4 hours to 30 seconds, saving us 30+ hours every week.",
     name: "Sarah Chen",
     role: "CEO, FinFlow",
   },

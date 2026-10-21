@@ -44,7 +44,7 @@ export default function ContactForm() {
   if (status === "success") {
     const waText = lastData
       ? encodeURIComponent(
-          `Hi Arbaz, I just submitted an inquiry on Evaroid.AI!\n\nName: ${lastData.name}\nEmail: ${lastData.email}\nCompany: ${lastData.company || "N/A"}\nMessage: ${lastData.message}`
+          `Hi Arbaz, I just submitted an inquiry on Evaroid!\n\nName: ${lastData.name}\nEmail: ${lastData.email}\nCompany: ${lastData.company || "N/A"}\nMessage: ${lastData.message}`
         )
       : "";
 
