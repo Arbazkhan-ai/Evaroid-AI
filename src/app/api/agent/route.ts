@@ -52,20 +52,28 @@ export async function POST(req: Request) {
       }
     }
 
+function cleanNoMarkdown(text: string): string {
+  return text
+    .replace(/\*\*/g, "")
+    .replace(/###\s*/g, "")
+    .replace(/##\s*/g, "")
+    .replace(/#\s*/g, "");
+}
+
     if (bestMatch && highestScore > 0) {
       return NextResponse.json({
-        reply: bestMatch.response,
+        reply: cleanNoMarkdown(bestMatch.response),
         suggestedLinks: bestMatch.suggestedLinks || [],
       });
     }
 
     // 2. Fallback smart concierge response with full navigation options
     const fallbackReply =
-      `I'm the **Evaroid.AI Intelligent Concierge**. Here is a quick snapshot of what we can help you with:\n\n` +
-      `• **AI & Multi-Agent Workflows:** Autonomous agents executing operational processes 24/7.\n` +
-      `• **Healthcare & Doctor Solutions:** Automated patient WhatsApp booking, triage, and emergency alert AI.\n` +
-      `• **Modern Web Engineering:** Next.js 14, high-converting platforms, and cloud databases.\n` +
-      `• **Careers:** Open engineering roles (Remote, Global).\n\n` +
+      `I'm the Evaroid.AI Intelligent Concierge. Here is a quick snapshot of what we can help you with:\n\n` +
+      `• AI and Multi-Agent Workflows: Autonomous agents executing operational processes 24/7.\n` +
+      `• Healthcare and Doctor Solutions: Automated patient WhatsApp booking, triage, and emergency alert AI.\n` +
+      `• Modern Web Engineering: Next.js 14, high-converting platforms, and cloud databases.\n` +
+      `• Careers: Open engineering roles (Remote, Global).\n\n` +
       `Would you like to speak directly with our engineering team or explore a specific case study?`;
 
     const fallbackLinks = [
@@ -77,7 +85,7 @@ export async function POST(req: Request) {
     ];
 
     return NextResponse.json({
-      reply: fallbackReply,
+      reply: cleanNoMarkdown(fallbackReply),
       suggestedLinks: fallbackLinks,
     });
   } catch (error) {

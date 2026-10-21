@@ -11,23 +11,23 @@ export const websiteKnowledge = {
   email: "arbazkhanofficial140@gmail.com",
   office: "San Francisco, CA / Global Remote",
   services: [
-    "Autonomous AI Agents & Multi-Agent LangGraph Systems",
+    "Autonomous AI Agents and Multi-Agent LangGraph Systems",
     "Enterprise Workflow Automation (n8n, Zapier, Webhooks)",
     "Modern Full-Stack Web Engineering (Next.js 14, React, Tailwind, PostgreSQL)",
-    "Computer Vision & Deep Learning (YOLO, MediaPipe, Audio Emotion Analysis)",
-    "WhatsApp Business Automation & CRM Integrations",
+    "Computer Vision and Deep Learning (YOLO, MediaPipe, Audio Emotion Analysis)",
+    "WhatsApp Business Automation and CRM Integrations",
   ],
   doctorSolutions: [
-    "24/7 Patient WhatsApp Booking & Automated Triage (reduces clinic no-shows by 40%)",
-    "Autonomous Emergency Alert & Dispatch AI (<500ms critical incident detection and alerting)",
-    "Clinical Notes & Consultation Summarizer (converts doctor-patient audio to EHR SOAP notes)",
+    "24/7 Patient WhatsApp Booking and Automated Triage (reduces clinic no-shows by 40%)",
+    "Autonomous Emergency Alert and Dispatch AI (sub-500ms critical incident detection and alerting)",
+    "Clinical Notes and Consultation Summarizer (converts doctor-patient audio to EHR SOAP notes)",
     "Private Medical LLMs with HIPAA-grade data isolation",
   ],
   careers: [
-    "Senior AI & LLM Systems Engineer ($70,000 – $110,000 / yr)",
-    "Full-Stack Engineer (Next.js 14 & TypeScript, $50,000 – $80,000 / yr)",
-    "AI Workflow & Automation Specialist ($40,000 – $65,000 / yr)",
-    "Product Designer UI/UX ($45,000 – $70,000 / yr)",
+    "Senior AI and LLM Systems Engineer ($70,000 - $110,000 / yr)",
+    "Full-Stack Engineer (Next.js 14 and TypeScript, $50,000 - $80,000 / yr)",
+    "AI Workflow and Automation Specialist ($40,000 - $65,000 / yr)",
+    "Product Designer UI/UX ($45,000 - $70,000 / yr)",
   ],
   caseStudies: [
     {
@@ -36,9 +36,9 @@ export const websiteKnowledge = {
       metrics: "85% Manual Workflow Time Reduced, 99.4% Tool Accuracy",
     },
     {
-      name: "Autonomous Emergency Alert & Dispatch AI",
+      name: "Autonomous Emergency Alert and Dispatch AI",
       id: "ai-emergency-trigger",
-      metrics: "<450ms Detection to Alert Dispatch, 99.8% Reliability",
+      metrics: "Under 450ms Detection to Alert Dispatch, 99.8% Reliability",
     },
     {
       name: "LeadFinder Pro Prospecting Engine",
@@ -57,7 +57,7 @@ export const cannedResponses: KnowledgeItem[] = [
   {
     keywords: ["doctor", "health", "hospital", "clinic", "patient", "medical", "physician", "appointment", "emergency"],
     response:
-      "### 🩺 Healthcare & Medical AI Solutions\n\nFor physicians, clinics, and hospital administrators, Evaroid.AI offers specialized systems:\n\n1. **24/7 Patient WhatsApp Booking & Triage:** Automates appointment scheduling, patient reminders, and initial intake directly on WhatsApp.\n2. **Emergency Alert & Dispatch AI:** Real-time anomaly detection with sub-500ms multi-channel notification (SMS, call, sirens).\n3. **Clinical Notes Copilot:** Auto-summarizes patient consultations into EHR-ready SOAP notes.\n4. **Private & HIPAA-Safe Deployments:** Secure on-premise and isolated private cloud LLM setups.",
+      "Healthcare and Medical AI Solutions:\n\nFor physicians, clinics, and hospital administrators, Evaroid.AI offers specialized systems:\n\n1. 24/7 Patient WhatsApp Booking and Triage: Automates appointment scheduling, patient reminders, and initial intake directly on WhatsApp.\n2. Emergency Alert and Dispatch AI: Real-time anomaly detection with sub-500ms multi-channel notification (SMS, call, sirens).\n3. Clinical Notes Copilot: Auto-summarizes patient consultations into EHR-ready SOAP notes.\n4. Private and HIPAA-Safe Deployments: Secure on-premise and isolated private cloud LLM setups.",
     suggestedLinks: [
       { label: "View Emergency AI Case Study", href: "/work/ai-emergency-trigger" },
       { label: "Chat on WhatsApp (+92 313 5300649)", href: "https://wa.me/923135300649?text=Hi%20Evaroid.AI%2C%20I%20am%20a%20Doctor%20and%20want%20to%20learn%20more." },
@@ -67,7 +67,7 @@ export const cannedResponses: KnowledgeItem[] = [
   {
     keywords: ["service", "services", "offer", "do", "what do you do", "capabilities", "features"],
     response:
-      "### ⚡ What We Build at Evaroid.AI\n\nWe specialize in production-grade AI and full-stack software:\n\n- **Autonomous AI Agents:** Multi-agent architectures (LangChain, LangGraph) capable of cyclic planning, tool-calling, and dynamic RAG document search.\n- **Enterprise Automations:** Connecting CRMs, WhatsApp, and databases into automated workflows.\n- **Modern Web Platforms:** High-converting, lightning-fast platforms using Next.js 14, TypeScript, and Tailwind CSS.\n- **Computer Vision & Audio AI:** Real-time YOLO object detection, MediaPipe pose tracking, and voice sentiment analysis.",
+      "What We Build at Evaroid.AI:\n\nWe specialize in production-grade AI and full-stack software:\n\n• Autonomous AI Agents: Multi-agent architectures (LangChain, LangGraph) capable of cyclic planning, tool-calling, and dynamic RAG document search.\n• Enterprise Automations: Connecting CRMs, WhatsApp, and databases into automated workflows.\n• Modern Web Platforms: High-converting, lightning-fast platforms using Next.js 14, TypeScript, and Tailwind CSS.\n• Computer Vision and Audio AI: Real-time YOLO object detection, MediaPipe pose tracking, and voice sentiment analysis.",
     suggestedLinks: [
       { label: "Explore Services", href: "/services" },
       { label: "Browse Case Studies", href: "/work" },
@@ -77,7 +77,7 @@ export const cannedResponses: KnowledgeItem[] = [
   {
     keywords: ["career", "job", "jobs", "hiring", "apply", "intern", "engineer", "salary", "work with us", "position"],
     response:
-      "### 🚀 Careers at Evaroid.AI\n\nWe are actively hiring remote-first engineers and designers:\n\n- **Senior AI & LLM Systems Engineer** ($70k–$110k/yr)\n- **Full-Stack Engineer (Next.js & TypeScript)** ($50k–$80k/yr)\n- **AI Workflow & Automation Specialist** ($40k–$65k/yr)\n- **Product Designer (UI/UX for AI Platforms)** ($45k–$70k/yr)\n\nWe offer 100% remote flexibility, learning stipends, modern gear budgets, and performance bonuses.",
+      "Careers at Evaroid.AI:\n\nWe are actively hiring remote-first engineers and designers:\n\n• Senior AI and LLM Systems Engineer ($70k - $110k/yr)\n• Full-Stack Engineer (Next.js and TypeScript) ($50k - $80k/yr)\n• AI Workflow and Automation Specialist ($40k - $65k/yr)\n• Product Designer (UI/UX for AI Platforms) ($45k - $70k/yr)\n\nWe offer 100% remote flexibility, learning stipends, modern gear budgets, and performance bonuses.",
     suggestedLinks: [
       { label: "View All Open Positions", href: "/careers" },
       { label: "Apply Directly on WhatsApp", href: "https://wa.me/923135300649?text=Hi%20Evaroid.AI%2C%20I%20am%20applying%20for%20a%20career%20role." },
@@ -86,7 +86,7 @@ export const cannedResponses: KnowledgeItem[] = [
   {
     keywords: ["contact", "call", "whatsapp", "email", "phone", "number", "reach", "talk", "touch", "location"],
     response:
-      "### 📞 Get in Touch with Evaroid.AI\n\nWe reply within one business day (or instantly on WhatsApp):\n\n- **WhatsApp / Phone:** [+92 313 5300649](https://wa.me/923135300649)\n- **Email:** [arbazkhanofficial140@gmail.com](mailto:arbazkhanofficial140@gmail.com)\n- **Offices:** San Francisco, CA & Global Remote Team\n\nYou can also submit your inquiry directly via our contact form.",
+      "Get in Touch with Evaroid.AI:\n\nWe reply within one business day (or instantly on WhatsApp):\n\n• WhatsApp / Phone: +92 313 5300649\n• Email: arbazkhanofficial140@gmail.com\n• Offices: San Francisco, CA and Global Remote Team\n\nYou can also submit your inquiry directly via our contact form.",
     suggestedLinks: [
       { label: "Chat on WhatsApp (+92 313 5300649)", href: "https://wa.me/923135300649" },
       { label: "Go to Contact Page", href: "/contact" },
@@ -95,7 +95,7 @@ export const cannedResponses: KnowledgeItem[] = [
   {
     keywords: ["case study", "portfolio", "projects", "work", "examples", "past work", "clients"],
     response:
-      "### 📂 Featured Case Studies & Implementations\n\nHere are some of our deployed systems:\n\n1. **Autonomous Agentic AI Suite:** LangGraph multi-agent orchestrator cutting manual workflow time by 85%.\n2. **Autonomous Emergency Alert & Dispatch AI:** Real-time critical incident detection with sub-450ms alerts.\n3. **LeadFinder Pro:** Automated B2B prospecting tool extracting 12,000+ verified leads daily.\n4. **Computer Vision Suite:** Helmet detection, cricket ball tracking, and batsman pose estimation at 60 FPS.",
+      "Featured Case Studies and Implementations:\n\nHere are some of our deployed systems:\n\n1. Autonomous Agentic AI Suite: LangGraph multi-agent orchestrator cutting manual workflow time by 85%.\n2. Autonomous Emergency Alert and Dispatch AI: Real-time critical incident detection with sub-450ms alerts.\n3. LeadFinder Pro: Automated B2B prospecting tool extracting 12,000+ verified leads daily.\n4. Computer Vision Suite: Helmet detection, cricket ball tracking, and batsman pose estimation at 60 FPS.",
     suggestedLinks: [
       { label: "View All Case Studies", href: "/work" },
       { label: "Read Emergency Dispatch AI", href: "/work/ai-emergency-trigger" },
@@ -105,7 +105,7 @@ export const cannedResponses: KnowledgeItem[] = [
   {
     keywords: ["pricing", "cost", "price", "rate", "quote", "budget", "how much"],
     response:
-      "### 💰 Pricing & Project Scoping\n\nEvery enterprise workflow is unique, but we offer transparent engagement models:\n\n- **Project-Based Sprints:** Fixed-scope delivery for custom autonomous agents, platforms, or integrations (typically 2–4 weeks).\n- **Dedicated AI Engineering Retainers:** Ongoing agent monitoring, pipeline fine-tuning, and multi-model updates.\n- **Direct WhatsApp Scoping:** Share your project overview and get a preliminary estimate within 2 hours.",
+      "Pricing and Project Scoping:\n\nEvery enterprise workflow is unique, but we offer transparent engagement models:\n\n• Project-Based Sprints: Fixed-scope delivery for custom autonomous agents, platforms, or integrations (typically 2 to 4 weeks).\n• Dedicated AI Engineering Retainers: Ongoing agent monitoring, pipeline fine-tuning, and multi-model updates.\n• Direct WhatsApp Scoping: Share your project overview and get a preliminary estimate within 2 hours.",
     suggestedLinks: [
       { label: "Discuss Your Budget on WhatsApp", href: "https://wa.me/923135300649?text=Hi%20Evaroid.AI%2C%20I%20would%20like%20to%20get%20a%20pricing%20quote." },
       { label: "Submit Request Form", href: "/contact" },
@@ -114,7 +114,7 @@ export const cannedResponses: KnowledgeItem[] = [
   {
     keywords: ["tech", "technology", "stack", "python", "next", "react", "langchain", "tools"],
     response:
-      "### 🛠️ Our Technology Stack\n\nWe build resilient, enterprise-grade architectures:\n\n- **AI & Reasoning:** LangChain, LangGraph, AutoGen, OpenAI GPT-4o, Claude 3.5 Sonnet, Llama 3, Vector Databases (Pinecone, Qdrant).\n- **Frontend & Web:** Next.js 14 (App Router), React 18, TypeScript, Tailwind CSS.\n- **Backend & Database:** Node.js, Python FastAPI, Prisma ORM, PostgreSQL, Redis.\n- **Computer Vision:** YOLOv8, MediaPipe, OpenCV, PyTorch.",
+      "Our Technology Stack:\n\nWe build resilient, enterprise-grade architectures:\n\n• AI and Reasoning: LangChain, LangGraph, AutoGen, OpenAI GPT-4o, Claude 3.5 Sonnet, Llama 3, Vector Databases (Pinecone, Qdrant).\n• Frontend and Web: Next.js 14 (App Router), React 18, TypeScript, Tailwind CSS.\n• Backend and Database: Node.js, Python FastAPI, Prisma ORM, PostgreSQL, Redis.\n• Computer Vision: YOLOv8, MediaPipe, OpenCV, PyTorch.",
     suggestedLinks: [
       { label: "Read About Evaroid.AI", href: "/about" },
       { label: "Inspect Open Architecture", href: "/work/agentic-ai-suite" },

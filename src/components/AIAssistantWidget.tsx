@@ -26,7 +26,7 @@ export default function AIAssistantWidget() {
     {
       sender: "agent",
       text:
-        "Hello! 👋 I'm the **Evaroid.AI Assistant**.\n\nAsk me anything about our website, autonomous AI agents, doctor & healthcare systems, case studies, or career openings!",
+        "Hello! 👋 I'm the Evaroid.AI Assistant.\n\nAsk me anything about our website, autonomous AI agents, doctor and healthcare systems, case studies, or career openings!",
       time: "Just now",
       links: [
         { label: "🩺 Doctor Solutions", href: "/work/ai-emergency-trigger" },
@@ -206,7 +206,7 @@ export default function AIAssistantWidget() {
                       : "bg-white border border-slate-200/80 text-slate-800 rounded-bl-none"
                   }`}
                 >
-                  <div className="whitespace-pre-line">{msg.text}</div>
+                  <div className="whitespace-pre-line">{msg.text.replace(/\*\*/g, "")}</div>
 
                   {/* Render Suggested Links if present */}
                   {msg.links && msg.links.length > 0 && (
