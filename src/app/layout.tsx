@@ -13,9 +13,9 @@ export const metadata: Metadata = {
   description:
     "Evaroid.AI specializes in custom AI automation, autonomous agents, and modern web platforms that streamline operations and accelerate growth.",
   icons: {
-    icon: "/logo.png",
-    shortcut: "/logo.png",
-    apple: "/logo.png",
+    icon: "/logo.svg",
+    shortcut: "/logo.svg",
+    apple: "/logo.svg",
   },
 };
 

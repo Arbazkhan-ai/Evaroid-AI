@@ -138,11 +138,12 @@ export default function AIAssistantWidget() {
             <div className="flex items-center gap-3">
               <div className="relative h-10 w-10 overflow-hidden rounded-2xl bg-white p-1 shadow-sm shrink-0">
                 <Image
-                  src="/logo.png"
+                  src="/logo.svg"
                   alt="Evaroid AI"
                   width={40}
                   height={40}
                   className="h-full w-full object-contain"
+                  unoptimized
                 />
               </div>
               <div>

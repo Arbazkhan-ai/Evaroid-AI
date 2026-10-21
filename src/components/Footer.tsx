@@ -8,11 +8,12 @@ export default function Footer() {
         <div>
           <div className="flex items-center gap-2.5 text-lg font-bold text-slate-900">
             <Image
-              src="/logo.png"
+              src="/logo.svg"
               alt="Evaroid.AI Logo"
               width={36}
               height={36}
               className="h-9 w-9 object-contain"
+              unoptimized
             />
             <span className="font-extrabold tracking-tight">
               Evaroid<span className="text-indigo-600">.AI</span>

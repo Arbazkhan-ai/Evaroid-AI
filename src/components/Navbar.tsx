@@ -36,11 +36,12 @@ export default function Navbar() {
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3.5">
         <Link href="/" className="flex items-center gap-2.5 group">
           <Image
-            src="/logo.png"
+            src="/logo.svg"
             alt="Evaroid.AI Logo"
             width={44}
             height={44}
             className="h-10 w-10 object-contain transition-transform group-hover:scale-105"
+            unoptimized
             priority
           />
           <span className="text-xl font-extrabold tracking-tight text-slate-900">
