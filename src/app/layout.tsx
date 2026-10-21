@@ -12,6 +12,11 @@ export const metadata: Metadata = {
   title: "Evaroid.AI — Intelligent AI Automation & Web Engineering",
   description:
     "Evaroid.AI specializes in custom AI automation, autonomous agents, and modern web platforms that streamline operations and accelerate growth.",
+  icons: {
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

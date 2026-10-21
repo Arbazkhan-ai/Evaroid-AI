@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 interface Message {
   sender: "user" | "agent";
@@ -135,8 +136,14 @@ export default function AIAssistantWidget() {
           {/* Header */}
           <div className="flex items-center justify-between border-b border-slate-100 bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 px-5 py-4 text-white">
             <div className="flex items-center gap-3">
-              <div className="grid h-10 w-10 place-items-center rounded-2xl bg-gradient-to-br from-indigo-500 to-fuchsia-500 font-bold text-white shadow-sm">
-                🤖
+              <div className="relative h-10 w-10 overflow-hidden rounded-2xl bg-white p-1 shadow-sm shrink-0">
+                <Image
+                  src="/logo.png"
+                  alt="Evaroid AI"
+                  width={40}
+                  height={40}
+                  className="h-full w-full object-contain"
+                />
               </div>
               <div>
                 <div className="flex items-center gap-2">

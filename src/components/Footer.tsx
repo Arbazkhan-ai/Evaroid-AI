@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -6,10 +7,16 @@ export default function Footer() {
       <div className="mx-auto grid max-w-7xl gap-10 px-6 py-14 md:grid-cols-4">
         <div>
           <div className="flex items-center gap-2.5 text-lg font-bold text-slate-900">
-            <span className="grid h-8 w-8 place-items-center rounded-lg bg-gradient-to-br from-accent to-fuchsia-600 text-xs font-black text-white shadow-sm">
-              E
+            <Image
+              src="/logo.png"
+              alt="Evaroid.AI Logo"
+              width={36}
+              height={36}
+              className="h-9 w-9 object-contain"
+            />
+            <span className="font-extrabold tracking-tight">
+              Evaroid<span className="text-indigo-600">.AI</span>
             </span>
-            Evaroid.AI
           </div>
           <p className="mt-4 text-sm text-slate-600 leading-relaxed">
             Intelligent AI automation and modern web engineering for fast-growing businesses.

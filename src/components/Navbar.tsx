@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState, useEffect } from "react";
 import PersonaBanner from "./PersonaBanner";
 
@@ -32,12 +33,19 @@ export default function Navbar() {
       }`}
     >
       <PersonaBanner />
-      <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-        <Link href="/" className="flex items-center gap-2.5 text-xl font-bold text-slate-900">
-          <span className="grid h-9 w-9 place-items-center rounded-xl bg-gradient-to-br from-accent to-fuchsia-600 text-sm font-black text-white shadow-md shadow-accent/20">
-            E
+      <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3.5">
+        <Link href="/" className="flex items-center gap-2.5 group">
+          <Image
+            src="/logo.png"
+            alt="Evaroid.AI Logo"
+            width={44}
+            height={44}
+            className="h-10 w-10 object-contain transition-transform group-hover:scale-105"
+            priority
+          />
+          <span className="text-xl font-extrabold tracking-tight text-slate-900">
+            Evaroid<span className="text-indigo-600">.AI</span>
           </span>
-          <span>Evaroid.AI</span>
         </Link>
 
         <div className="hidden items-center gap-8 md:flex">
